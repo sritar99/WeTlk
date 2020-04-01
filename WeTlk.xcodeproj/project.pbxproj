@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8D6EF4ED2433E282005C8E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF4EC2433E282005C8E87 /* AppDelegate.swift */; };
 		8D6EF4EF2433E282005C8E87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF4EE2433E282005C8E87 /* SceneDelegate.swift */; };
-		8D6EF4F12433E282005C8E87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF4F02433E282005C8E87 /* ViewController.swift */; };
+		8D6EF4F12433E282005C8E87 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF4F02433E282005C8E87 /* WelcomeViewController.swift */; };
 		8D6EF4F42433E282005C8E87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6EF4F22433E282005C8E87 /* Main.storyboard */; };
 		8D6EF4F62433E283005C8E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6EF4F52433E283005C8E87 /* Assets.xcassets */; };
 		8D6EF4F92433E283005C8E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6EF4F72433E283005C8E87 /* LaunchScreen.storyboard */; };
+		8D6EF5022433E477005C8E87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF5012433E477005C8E87 /* ChatViewController.swift */; };
+		8D6EF5042433E4A2005C8E87 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF5032433E4A2005C8E87 /* LoginViewController.swift */; };
+		8D6EF5062433E4BC005C8E87 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF5052433E4BC005C8E87 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D6EF4E92433E282005C8E87 /* WeTlk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeTlk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6EF4EC2433E282005C8E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D6EF4EE2433E282005C8E87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8D6EF4F02433E282005C8E87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D6EF4F02433E282005C8E87 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8D6EF4F32433E282005C8E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D6EF4F52433E283005C8E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D6EF4F82433E283005C8E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D6EF4FA2433E283005C8E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D6EF5012433E477005C8E87 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8D6EF5032433E4A2005C8E87 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8D6EF5052433E4BC005C8E87 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,24 @@
 			children = (
 				8D6EF4EC2433E282005C8E87 /* AppDelegate.swift */,
 				8D6EF4EE2433E282005C8E87 /* SceneDelegate.swift */,
-				8D6EF4F02433E282005C8E87 /* ViewController.swift */,
+				8D6EF5002433E35E005C8E87 /* Controllers */,
 				8D6EF4F22433E282005C8E87 /* Main.storyboard */,
 				8D6EF4F52433E283005C8E87 /* Assets.xcassets */,
 				8D6EF4F72433E283005C8E87 /* LaunchScreen.storyboard */,
 				8D6EF4FA2433E283005C8E87 /* Info.plist */,
 			);
 			path = WeTlk;
+			sourceTree = "<group>";
+		};
+		8D6EF5002433E35E005C8E87 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D6EF4F02433E282005C8E87 /* WelcomeViewController.swift */,
+				8D6EF5012433E477005C8E87 /* ChatViewController.swift */,
+				8D6EF5032433E4A2005C8E87 /* LoginViewController.swift */,
+				8D6EF5052433E4BC005C8E87 /* RegisterViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D6EF4F12433E282005C8E87 /* ViewController.swift in Sources */,
+				8D6EF4F12433E282005C8E87 /* WelcomeViewController.swift in Sources */,
 				8D6EF4ED2433E282005C8E87 /* AppDelegate.swift in Sources */,
+				8D6EF5022433E477005C8E87 /* ChatViewController.swift in Sources */,
+				8D6EF5062433E4BC005C8E87 /* RegisterViewController.swift in Sources */,
+				8D6EF5042433E4A2005C8E87 /* LoginViewController.swift in Sources */,
 				8D6EF4EF2433E282005C8E87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,10 +303,10 @@
 		8D6EF4FE2433E283005C8E87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAQ3H6MLH6;
 				INFOPLIST_FILE = WeTlk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +314,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sriharsha.WeTlk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8D6EF4FF2433E283005C8E87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAQ3H6MLH6;
 				INFOPLIST_FILE = WeTlk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sriharsha.WeTlk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
