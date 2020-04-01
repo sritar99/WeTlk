@@ -1,0 +1,6 @@
+framework module Pods_WeTlk {
+  umbrella header "Pods-WeTlk-umbrella.h"
+
+  export *
+  module * { export * }
+}
