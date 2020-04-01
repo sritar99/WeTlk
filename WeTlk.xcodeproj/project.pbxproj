@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D8C2F630F3B77D87557A999 /* Pods_WeTlk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D512BF02CB482DDD9C0141F9 /* Pods_WeTlk.framework */; };
 		8D6EF4ED2433E282005C8E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF4EC2433E282005C8E87 /* AppDelegate.swift */; };
 		8D6EF4EF2433E282005C8E87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF4EE2433E282005C8E87 /* SceneDelegate.swift */; };
 		8D6EF4F12433E282005C8E87 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF4F02433E282005C8E87 /* WelcomeViewController.swift */; };
@@ -16,6 +17,8 @@
 		8D6EF5022433E477005C8E87 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF5012433E477005C8E87 /* ChatViewController.swift */; };
 		8D6EF5042433E4A2005C8E87 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF5032433E4A2005C8E87 /* LoginViewController.swift */; };
 		8D6EF5062433E4BC005C8E87 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6EF5052433E4BC005C8E87 /* RegisterViewController.swift */; };
+		8D9430DD24346AC80085AFBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D9430DC24346AC80085AFBB /* GoogleService-Info.plist */; };
+		8DEEA0922434CA1C000CA1FF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEEA0912434CA1C000CA1FF /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,11 @@
 		8D6EF5012433E477005C8E87 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		8D6EF5032433E4A2005C8E87 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8D6EF5052433E4BC005C8E87 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8D9430DC24346AC80085AFBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8DEEA0912434CA1C000CA1FF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B1C06FBDA127767FD1778CAE /* Pods-WeTlk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeTlk.debug.xcconfig"; path = "Target Support Files/Pods-WeTlk/Pods-WeTlk.debug.xcconfig"; sourceTree = "<group>"; };
+		D512BF02CB482DDD9C0141F9 /* Pods_WeTlk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeTlk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA4609284F18E17FB8D819BF /* Pods-WeTlk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeTlk.release.xcconfig"; path = "Target Support Files/Pods-WeTlk/Pods-WeTlk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8C2F630F3B77D87557A999 /* Pods_WeTlk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		458FEFB403B72D7D03C76E2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1C06FBDA127767FD1778CAE /* Pods-WeTlk.debug.xcconfig */,
+				EA4609284F18E17FB8D819BF /* Pods-WeTlk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7627A123FFC87076619D229B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D512BF02CB482DDD9C0141F9 /* Pods_WeTlk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D6EF4E02433E282005C8E87 = {
 			isa = PBXGroup;
 			children = (
 				8D6EF4EB2433E282005C8E87 /* WeTlk */,
 				8D6EF4EA2433E282005C8E87 /* Products */,
+				458FEFB403B72D7D03C76E2B /* Pods */,
+				7627A123FFC87076619D229B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,9 +94,11 @@
 				8D6EF4EE2433E282005C8E87 /* SceneDelegate.swift */,
 				8D6EF5002433E35E005C8E87 /* Controllers */,
 				8D6EF4F22433E282005C8E87 /* Main.storyboard */,
+				8DEEA0932434CA23000CA1FF /* Model */,
 				8D6EF4F52433E283005C8E87 /* Assets.xcassets */,
 				8D6EF4F72433E283005C8E87 /* LaunchScreen.storyboard */,
 				8D6EF4FA2433E283005C8E87 /* Info.plist */,
+				8D9430DC24346AC80085AFBB /* GoogleService-Info.plist */,
 			);
 			path = WeTlk;
 			sourceTree = "<group>";
@@ -84,6 +114,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		8DEEA0932434CA23000CA1FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DEEA0912434CA1C000CA1FF /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D6EF4FD2433E283005C8E87 /* Build configuration list for PBXNativeTarget "WeTlk" */;
 			buildPhases = (
+				38AFAF59618FF1A21F114E5D /* [CP] Check Pods Manifest.lock */,
 				8D6EF4E52433E282005C8E87 /* Sources */,
 				8D6EF4E62433E282005C8E87 /* Frameworks */,
 				8D6EF4E72433E282005C8E87 /* Resources */,
+				01195F0118F4A8A59297C79F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,12 +183,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D6EF4F92433E283005C8E87 /* LaunchScreen.storyboard in Resources */,
+				8D9430DD24346AC80085AFBB /* GoogleService-Info.plist in Resources */,
 				8D6EF4F62433E283005C8E87 /* Assets.xcassets in Resources */,
 				8D6EF4F42433E282005C8E87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01195F0118F4A8A59297C79F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeTlk/Pods-WeTlk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeTlk/Pods-WeTlk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeTlk/Pods-WeTlk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38AFAF59618FF1A21F114E5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeTlk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D6EF4E52433E282005C8E87 /* Sources */ = {
@@ -161,6 +244,7 @@
 				8D6EF5062433E4BC005C8E87 /* RegisterViewController.swift in Sources */,
 				8D6EF5042433E4A2005C8E87 /* LoginViewController.swift in Sources */,
 				8D6EF4EF2433E282005C8E87 /* SceneDelegate.swift in Sources */,
+				8DEEA0922434CA1C000CA1FF /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +386,7 @@
 		};
 		8D6EF4FE2433E283005C8E87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1C06FBDA127767FD1778CAE /* Pods-WeTlk.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAQ3H6MLH6;
@@ -320,6 +405,7 @@
 		};
 		8D6EF4FF2433E283005C8E87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4609284F18E17FB8D819BF /* Pods-WeTlk.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAQ3H6MLH6;
